@@ -1,4 +1,6 @@
 import { GraduationCap, BookOpen, Users, Sprout, Briefcase, Heart, ShieldCheck, HandHeart, Shovel, UserCheck, Scale, Globe, Calendar } from 'lucide-react';
+import agricultureHero from '../assets/images/services/agriculture-hero.jpg';
+import womenHero from '../assets/images/services/women-empowerment-hero.jpg';
 
 export const serviceDetails = {
     "child-education": {
@@ -40,7 +42,7 @@ export const serviceDetails = {
     "agriculture-development": {
         title: "Agriculture Development",
         tagline: "Nurturing the land to secure a sustainable and prosperous future for our farmers.",
-        heroImage: "https://messages-prod.27c852f3500f38c1e7786e2c9ff9e48f.r2.cloudflarestorage.com/019b9d32-2379-7ec6-9625-bbb9f0db17a4/1773491507642-019cec54-8d89-74e3-911f-3ede7bbaff67.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=75514238966d6677c3874ef9149f1398%2F20260314%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260314T123147Z&X-Amz-Expires=3600&X-Amz-Signature=8d34d6676e2940c9f726aca320eef4c5f12b980b1a481f29ad40ba15fa2ca2af&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+        heroImage: agricultureHero,
         icon: Sprout,
         aboutDesc: "Farmers are the backbone of our economy. We empower them by introducing modern irrigation techniques, organic farming practices, and high-quality seed distribution. Our focus is on long-term sustainability and improving the yield of small-scale farmers through continuous training and support.",
         quote: "The discovery of agriculture was the first big step toward a civilized life.",
@@ -76,7 +78,7 @@ export const serviceDetails = {
     "women-empowerment": {
         title: "Women Empowerment",
         tagline: "Empowering women today to lead the change for a prosperous tomorrow.",
-        heroImage: "https://images.unsplash.com/photo-1590650516494-23253a088a24?q=80&w=2070&auto=format&fit=crop",
+        heroImage: womenHero,
         icon: Users,
         aboutDesc: "When you empower a woman, you empower a whole family and a community. Our programs focus on providing women with vocational skills, leadership training, and financial literacy to help them achieve social and economic independence.",
         quote: "There is no limit to what we, as women, can accomplish.",

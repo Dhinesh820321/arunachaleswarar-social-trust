@@ -7,13 +7,18 @@ import {
     ShieldCheck,
     HandHeart
 } from 'lucide-react';
+import agricultureHero from '../assets/images/services/agriculture-hero.jpg';
+import womenHero from '../assets/images/services/women-empowerment-hero.jpg';
+import childEducation from '../assets/images/services/child-education.jpg';
+import youthTraining from '../assets/images/services/youth-training.jpg';
+import ruralWomen from '../assets/images/services/rural-women.jpg';
 
 export const services = [
     {
         icon: GraduationCap,
         title: "Child Education",
         desc: "Ensuring every child has access to quality schooling, stationery, and learning support.",
-        image: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=2022&auto=format&fit=crop",
+        image: childEducation,
         gradient: "from-blue-500 to-cyan-500",
         path: "/services/child-education"
     },
@@ -21,7 +26,7 @@ export const services = [
         icon: Sprout,
         title: "Agriculture Development",
         desc: "Empowering farmers with modern irrigation, organic farming, and seed programs.",
-        image: "https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?q=80&w=2070&auto=format&fit=crop",
+        image: agricultureHero,
         gradient: "from-green-500 to-emerald-600",
         path: "/services/agriculture-development"
     },
@@ -29,7 +34,7 @@ export const services = [
         icon: Users,
         title: "Women Empowerment",
         desc: "Skill training in tailoring and handicrafts to promote financial independence.",
-        image: "https://images.unsplash.com/photo-1590650516494-23253a088a24?q=80&w=2070&auto=format&fit=crop",
+        image: womenHero,
         gradient: "from-purple-500 to-fuchsia-600",
         path: "/services/women-empowerment"
     },
@@ -37,7 +42,7 @@ export const services = [
         icon: Briefcase,
         title: "Unemployment Youth",
         desc: "Vocational training and job placement support for rural youth development.",
-        image: "https://images.unsplash.com/photo-1521737711867-e3b97375f902?q=80&w=1974&auto=format&fit=crop",
+        image: youthTraining,
         gradient: "from-slate-700 to-blue-800",
         path: "/services/unemployment-youth"
     },
@@ -45,7 +50,7 @@ export const services = [
         icon: HandHeart,
         title: "Rural Women Support",
         desc: "Self-help groups and micro-finance guidance for women in rural communities.",
-        image: "https://images.unsplash.com/photo-1621648011116-f33162799793?q=80&w=1935&auto=format&fit=crop",
+        image: ruralWomen,
         gradient: "from-rose-500 to-red-600",
         path: "/services/rural-women-support"
     },

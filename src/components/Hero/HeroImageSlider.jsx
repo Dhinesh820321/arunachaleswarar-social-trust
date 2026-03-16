@@ -2,27 +2,30 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 import heroPng from '../../assets/hero.png';
+import agricultureHero from '../../assets/images/services/agriculture-hero.jpg';
+import womenHero from '../../assets/images/services/women-empowerment-hero.jpg';
 
 const heroImages = [
     {
-        url: heroPng,
+        url:'',
         title: 'Arunachaleswarar Social Trust'
     },
     {
-        url: 'https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=2070&auto=format&fit=crop',
+        url: 'https://images.unsplash.com/photo-1573497620053-ea5310f94f17?q=80&w=2070&auto=format&fit=crop',
         title: 'Education for Every Child'
     },
     {
-        url: 'https://images.unsplash.com/photo-1595015383233-e1f427afb7ef?q=80&w=2070&auto=format&fit=crop',
+        url: agricultureHero,
         title: 'Supporting Sustainable Agriculture'
     },
-    {
-        url: 'https://images.unsplash.com/photo-1573497620053-ea5310f94f17?q=80&w=2070&auto=format&fit=crop',
-        title: 'Empowering Women Locally'
-    },
+   
     {
         url: 'https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?q=80&w=2070&auto=format&fit=crop',
         title: 'Reaching Out to Those in Need'
+    },
+     {
+        url: womenHero,
+        title: 'Empowering Women Locally'
     },
     {
         url: 'https://images.unsplash.com/photo-1511632765486-a01980e01a18?q=80&w=2070&auto=format&fit=crop',

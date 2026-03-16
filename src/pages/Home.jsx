@@ -74,22 +74,6 @@ const StatCard = ({ icon: Icon, value, label, color }) => (
     </motion.div>
 );
 
-const ServicePreview = ({ icon: Icon, title, desc }) => (
-    <motion.div
-        whileHover={{ y: -10 }}
-        className="glass-card p-6 rounded-3xl group border-transparent hover:border-blue-500/30 transition-all"
-    >
-        <div className="w-14 h-14 bg-blue-600 rounded-2xl flex items-center justify-center text-white mb-6 group-hover:scale-110 group-hover:rotate-6 transition-transform">
-            <Icon className="w-8 h-8" />
-        </div>
-        <h3 className="text-xl font-bold mb-3 text-slate-900">{title}</h3>
-        <p className="text-slate-500 text-sm leading-relaxed mb-6">{desc}</p>
-        <Link to="/services" className="text-blue-600 font-bold text-sm flex items-center gap-1 group-hover:gap-2 transition-all">
-            Read More <ArrowRight className="w-4 h-4" />
-        </Link>
-    </motion.div>
-);
-
 const Home = () => {
     return (
         <div>
