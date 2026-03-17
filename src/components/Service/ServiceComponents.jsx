@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { CheckCircle2, ArrowRight, Heart, Users, Calendar, MapPin } from 'lucide-react';
 
-export const ServiceHero = ({ title, tagline, heroImage, icon: Icon, gradientFrom = "from-blue-600/90", gradientTo = "to-indigo-600/90" }) => (
+export const ServiceHero = ({ title, tagline, heroImage, icon: Icon }) => (
     <section className="relative h-[60vh] md:h-[70vh] flex items-center justify-center overflow-hidden">
         {/* Background Image with Parallax-like effect */}
         <div className="absolute inset-0">
@@ -16,9 +16,7 @@ export const ServiceHero = ({ title, tagline, heroImage, icon: Icon, gradientFro
                     e.target.onerror = null;
                 }}
             />
-            {/* Dark Overlay with Gradient */}
-            <div className={`absolute inset-0 bg-gradient-to-br ${gradientFrom} ${gradientTo} mix-blend-multiply opacity-80`}></div>
-            <div className="absolute inset-0 bg-black/40"></div>
+            <div className="absolute inset-0 bg-gradient-to-b from-black/15 to-black/25 backdrop-blur-sm"></div>
         </div>
 
         <div className="max-w-7xl mx-auto px-4 md:px-8 relative z-20 text-center text-white">
@@ -42,14 +40,12 @@ export const ServiceHero = ({ title, tagline, heroImage, icon: Icon, gradientFro
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.4 }}
-                className="text-xl md:text-3xl text-blue-50 max-w-3xl mx-auto font-medium leading-relaxed drop-shadow-lg"
+                className="text-xl md:text-3xl text-white max-w-3xl mx-auto font-bold leading-relaxed drop-shadow-lg"
             >
                 {tagline}
             </motion.p>
         </div>
 
-        {/* Decorative mask */}
-        <div className="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-t from-slate-50 to-transparent z-10"></div>
     </section>
 );
 

@@ -1,20 +1,20 @@
 import React from 'react';
 import { serviceDetails } from '../../data/serviceDetailsData';
 import {
-    ServiceHero,
     ServiceContent,
     ImpactStats,
     ActivitySection,
     ServiceGallery,
     CallToAction
 } from '../../components/Service/ServiceComponents';
+import PremiumHero from '../../components/Service/PremiumHero';
 
 const ChildEducation = () => {
     const data = serviceDetails["child-education"];
 
     return (
         <div className="bg-slate-50 min-h-screen">
-            <ServiceHero {...data} />
+            <PremiumHero {...data} />
             <ServiceContent {...data} />
             <ImpactStats stats={data.stats} />
             <ActivitySection activities={data.activities} />

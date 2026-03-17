@@ -6,14 +6,12 @@ import agricultureHero from '../../assets/images/services/agriculture-hero.jpg';
 import womenHero from '../../assets/images/services/women-empowerment-hero.jpg';
 
 const heroImages = [
-    {
-        url:'',
-        title: 'Arunachaleswarar Social Trust'
-    },
-    {
+     {
         url: 'https://images.unsplash.com/photo-1573497620053-ea5310f94f17?q=80&w=2070&auto=format&fit=crop',
         title: 'Education for Every Child'
     },
+   
+   
     {
         url: agricultureHero,
         title: 'Supporting Sustainable Agriculture'
@@ -30,7 +28,11 @@ const heroImages = [
     {
         url: 'https://images.unsplash.com/photo-1511632765486-a01980e01a18?q=80&w=2070&auto=format&fit=crop',
         title: 'Building Stronger Communities'
-    }
+    },
+     {
+        url:'',
+        title: 'Arunachaleswarar Social Trust'
+    },
 ];
 
 const HeroImageSlider = () => {
