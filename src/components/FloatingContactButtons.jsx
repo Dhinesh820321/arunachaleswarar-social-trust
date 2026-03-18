@@ -36,7 +36,7 @@ const FloatingContactButtons = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.3, delay: 0.1 }}
-                className="w-14 h-14 bg-blue-600 text-white rounded-full shadow-lg hover:shadow-2xl hover:bg-blue-700 transition-colors flex items-center justify-center group relative cursor-pointer"
+                className="w-14 h-14 bg-primary text-white rounded-full shadow-lg hover:shadow-2xl hover:bg-primary-dark transition-colors flex items-center justify-center group relative cursor-pointer"
                 aria-label="Call Us"
             >
                 <Phone className="w-6 h-6 fill-current" />

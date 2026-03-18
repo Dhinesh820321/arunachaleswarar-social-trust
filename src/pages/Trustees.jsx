@@ -9,7 +9,7 @@ const TrusteeCard = ({ name, position, desc, image, index }) => (
         viewport={{ once: true }}
         className="group relative"
     >
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-100/50 to-indigo-100/50 rounded-[2.5rem] blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-accent/10 rounded-[2.5rem] blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
         <div className="glass-card bg-white/60 backdrop-blur-md rounded-[2.5rem] overflow-hidden p-5 h-full border border-white/50 relative z-10 transition-all duration-500 shadow-sm hover:shadow-2xl hover:-translate-y-2 flex flex-col">
             <div className="relative aspect-square rounded-[2rem] overflow-hidden mb-6 shadow-inner">
                 <img
@@ -19,9 +19,9 @@ const TrusteeCard = ({ name, position, desc, image, index }) => (
                 />
             </div>
             <div className="px-2 pb-4 flex flex-col flex-grow text-center">
-                <h3 className="text-2xl font-extrabold text-slate-800 mb-1 group-hover:text-blue-700 transition-colors">{name}</h3>
-                <p className="text-blue-600 font-bold text-xs md:text-sm uppercase tracking-widest mb-4 opacity-90">{position}</p>
-                <div className="w-12 h-1 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-full mx-auto mb-4 opacity-50"></div>
+                <h3 className="text-2xl font-extrabold text-slate-800 mb-1 group-hover:text-primary-dark transition-colors">{name}</h3>
+                <p className="text-primary font-bold text-xs md:text-sm uppercase tracking-widest mb-4 opacity-90">{position}</p>
+                <div className="w-12 h-1 bg-gradient-to-r from-primary to-accent rounded-full mx-auto mb-4 opacity-50"></div>
                 <p className="text-slate-600 text-sm leading-relaxed italic mt-auto px-2">
                     "{desc}"
                 </p>
@@ -80,7 +80,7 @@ const Trustees = () => {
                         animate={{ opacity: 1, y: 0 }}
                         className="text-4xl md:text-6xl font-extrabold text-white mb-6"
                     >
-                        Board of <span className="text-blue-500">Trustees</span>
+                        Board of <span className="text-primary">Trustees</span>
                     </motion.h1>
                     <motion.p
                         initial={{ opacity: 0, y: 20 }}
@@ -103,11 +103,11 @@ const Trustees = () => {
             </section>
 
             {/* Philosophy Section */}
-            <section className="section-padding bg-blue-600 text-white rounded-[4rem] mx-4 mb-20 text-center overflow-hidden relative">
+            <section className="section-padding bg-primary text-white rounded-[4rem] mx-4 mb-20 text-center overflow-hidden relative">
                 <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -mr-20 -mt-20 blur-3xl"></div>
                 <div className="max-w-4xl mx-auto relative z-10">
                     <h2 className="text-3xl md:text-4xl font-extrabold mb-8 italic">"Leadership is the capacity to translate vision into reality."</h2>
-                    <p className="text-blue-100 text-lg mb-8">
+                    <p className="text-primary-light text-lg mb-8">
                         Our board members bring a diverse set of skills and a unified passion for social change. Under their guidance, the trust has reached milestones that initially seemed impossible.
                     </p>
                     <div className="w-20 h-1 bg-white mx-auto rounded-full"></div>

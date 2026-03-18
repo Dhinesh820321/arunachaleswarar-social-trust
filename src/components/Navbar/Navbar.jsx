@@ -54,7 +54,7 @@ const Navbar = () => {
                         <span className="font-bold text-sm md:text-lg lg:text-xl leading-tight text-slate-900 transition-colors duration-300 truncate">
                             Arunachaleshwarar
                         </span>
-                        <span className="text-[9px] md:text-[11px] lg:text-xs font-semibold text-blue-600 tracking-wider uppercase leading-tight truncate">
+                        <span className="text-[9px] md:text-[11px] lg:text-xs font-semibold text-primary tracking-wider uppercase leading-tight truncate">
                             Educational & Social Trust
                         </span>
                     </div>
@@ -71,8 +71,8 @@ const Navbar = () => {
                         >
                             <Link
                                 to={link.path}
-                                className={`font-semibold text-sm xl:text-base flex items-center gap-1 transition-colors hover:text-blue-600 py-2 ${location.pathname.startsWith(link.path) && link.path !== '/' || location.pathname === link.path
-                                    ? 'text-blue-600'
+                                className={`font-semibold text-sm xl:text-base flex items-center gap-1 transition-colors hover:text-primary py-2 ${location.pathname.startsWith(link.path) && link.path !== '/' || location.pathname === link.path
+                                    ? 'text-primary'
                                     : 'text-slate-700'
                                     }`}
                             >
@@ -98,7 +98,7 @@ const Navbar = () => {
                                                     <Link
                                                         key={subLink.path}
                                                         to={subLink.path}
-                                                        className={`px-4 py-2.5 text-sm font-medium transition-colors hover:bg-blue-50 hover:text-blue-600 ${location.pathname === subLink.path ? 'text-blue-600 bg-blue-50/50' : 'text-slate-700'
+                                                        className={`px-4 py-2.5 text-sm font-medium transition-colors hover:bg-primary/5 hover:text-primary ${location.pathname === subLink.path ? 'text-primary bg-primary/5' : 'text-slate-700'
                                                             }`}
                                                         onClick={() => setIsServicesOpen(false)}
                                                     >
@@ -119,7 +119,7 @@ const Navbar = () => {
 
                 {/* Mobile Menu Button */}
                 <button
-                    className="lg:hidden p-2 -mr-2 text-slate-700 hover:text-blue-600 transition-colors shrink-0"
+                    className="lg:hidden p-2 -mr-2 text-slate-700 hover:text-primary transition-colors shrink-0"
                     onClick={() => setIsOpen(!isOpen)}
                 >
                     {isOpen ? <X className="w-6 h-6 md:w-8 md:h-8" /> : <Menu className="w-6 h-6 md:w-8 md:h-8" />}
@@ -143,8 +143,8 @@ const Navbar = () => {
                                             <div className="flex items-center justify-between py-2">
                                                 <Link
                                                     to={link.path}
-                                                    className={`font-bold text-lg md:text-xl transition-colors hover:text-blue-600 ${location.pathname.startsWith(link.path) && link.path !== '/' || location.pathname === link.path
-                                                        ? 'text-blue-600'
+                                                    className={`font-bold text-lg md:text-xl transition-colors hover:text-primary ${location.pathname.startsWith(link.path) && link.path !== '/' || location.pathname === link.path
+                                                        ? 'text-primary'
                                                         : 'text-slate-700'
                                                         }`}
                                                     onClick={() => setIsOpen(false)}
@@ -157,7 +157,7 @@ const Navbar = () => {
                                                     <Link
                                                         key={subLink.path}
                                                         to={subLink.path}
-                                                        className={`text-base font-semibold transition-colors hover:text-blue-600 py-1 ${location.pathname === subLink.path ? 'text-blue-600' : 'text-slate-600'
+                                                        className={`text-base font-semibold transition-colors hover:text-primary py-1 ${location.pathname === subLink.path ? 'text-primary' : 'text-slate-600'
                                                             }`}
                                                         onClick={() => setIsOpen(false)}
                                                     >
@@ -169,7 +169,7 @@ const Navbar = () => {
                                     ) : (
                                         <Link
                                             to={link.path}
-                                            className={`font-bold text-lg md:text-xl py-2 transition-colors hover:text-blue-600 ${location.pathname === link.path ? 'text-blue-600' : 'text-slate-700'
+                                            className={`font-bold text-lg md:text-xl py-2 transition-colors hover:text-primary ${location.pathname === link.path ? 'text-primary' : 'text-slate-700'
                                                 }`}
                                             onClick={() => setIsOpen(false)}
                                         >

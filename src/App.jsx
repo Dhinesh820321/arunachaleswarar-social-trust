@@ -19,6 +19,7 @@ import HelpingHands from './pages/service-pages/HelpingHands';
 import HumanRights from './pages/service-pages/HumanRights';
 
 import FloatingContactButtons from './components/FloatingContactButtons';
+import ServicesSubNav from './components/Service/ServicesSubNav';
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -35,6 +36,7 @@ function App() {
         <ScrollToTop />
         <Navbar />
         <main className="flex-grow pt-20">
+          <ServicesSubNav />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />

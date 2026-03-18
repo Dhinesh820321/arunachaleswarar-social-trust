@@ -78,7 +78,7 @@ const HeroImageSlider = () => {
                     <button
                         key={index}
                         onClick={() => setCurrentIndex(index)}
-                        className={`w-2 h-2 rounded-full transition-all duration-300 ${index === currentIndex ? 'w-8 bg-blue-500' : 'bg-white/50 hover:bg-white'
+                        className={`w-2 h-2 rounded-full transition-all duration-300 ${index === currentIndex ? 'w-8 bg-primary' : 'bg-white/50 hover:bg-white'
                             }`}
                     />
                 ))}

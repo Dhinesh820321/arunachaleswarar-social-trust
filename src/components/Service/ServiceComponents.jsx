@@ -26,7 +26,7 @@ export const ServiceHero = ({ title, tagline, heroImage, icon: Icon }) => (
                 transition={{ duration: 0.5 }}
                 className="inline-flex items-center justify-center p-5 bg-white/10 backdrop-blur-xl rounded-[2rem] mb-8 border border-white/20 shadow-2xl"
             >
-                <Icon className="w-12 h-12 text-blue-300" />
+                <Icon className="w-12 h-12 text-primary-light" />
             </motion.div>
             <motion.h1
                 initial={{ opacity: 0, y: 30 }}
@@ -59,17 +59,17 @@ export const ServiceContent = ({ aboutDesc, quote, quoteAuthor }) => (
                     viewport={{ once: true }}
                     className="space-y-8"
                 >
-                    <div className="inline-block px-4 py-1.5 bg-blue-600/10 border border-blue-600/20 rounded-full text-blue-600 font-bold text-sm tracking-widest uppercase">
+                    <div className="inline-block px-4 py-1.5 bg-primary/10 border border-primary/20 rounded-full text-primary font-bold text-sm tracking-widest uppercase">
                         Mission Overview
                     </div>
                     <h2 className="text-4xl md:text-5xl font-extrabold text-slate-900 leading-tight">
-                        Working Towards A <span className="text-blue-600">Unified Future</span>
+                        Working Towards A <span className="text-primary">Unified Future</span>
                     </h2>
                     <p className="text-xl text-slate-600 leading-relaxed font-medium">
                         {aboutDesc}
                     </p>
-                    <div className="p-8 bg-white rounded-[2rem] border-l-8 border-blue-600 shadow-xl italic text-slate-700 text-lg relative">
-                        <span className="absolute -top-4 -left-2 text-7xl text-blue-100 font-serif opacity-50">"</span>
+                    <div className="p-8 bg-white rounded-[2rem] border-l-8 border-primary shadow-xl italic text-slate-700 text-lg relative">
+                        <span className="absolute -top-4 -left-2 text-7xl text-primary/10 font-serif opacity-50">"</span>
                         {quote || "We believe that together, we can empower communities and build a legacy of hope and prosperity."}
                         <footer className="mt-4 font-bold text-slate-900 not-italic">— {quoteAuthor || "Trust Chairperson"}</footer>
                     </div>
@@ -92,8 +92,8 @@ export const ServiceContent = ({ aboutDesc, quote, quoteAuthor }) => (
                             }}
                         />
                     </div>
-                    <div className="absolute -bottom-10 -left-10 w-48 h-48 bg-blue-600 rounded-[2rem] -z-10 animate-pulse opacity-20"></div>
-                    <div className="absolute -top-10 -right-10 w-64 h-64 bg-indigo-600 rounded-full -z-10 blur-3xl opacity-20"></div>
+                    <div className="absolute -bottom-10 -left-10 w-48 h-48 bg-primary rounded-[2rem] -z-10 animate-pulse opacity-20"></div>
+                    <div className="absolute -top-10 -right-10 w-64 h-64 bg-accent rounded-full -z-10 blur-3xl opacity-20"></div>
                 </motion.div>
             </div>
         </div>
@@ -102,7 +102,7 @@ export const ServiceContent = ({ aboutDesc, quote, quoteAuthor }) => (
 
 export const ImpactStats = ({ stats }) => (
     <section className="py-24 bg-slate-900 relative overflow-hidden">
-        <div className="absolute top-1/2 left-0 w-full h-1 bg-gradient-to-r from-transparent via-blue-900 to-transparent"></div>
+        <div className="absolute top-1/2 left-0 w-full h-1 bg-gradient-to-r from-transparent via-primary-dark/30 to-transparent"></div>
         <div className="max-w-7xl mx-auto px-4 md:px-8 relative z-10">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
                 {stats.map((stat, idx) => {
@@ -116,11 +116,11 @@ export const ImpactStats = ({ stats }) => (
                             transition={{ delay: idx * 0.1 }}
                             className="text-center group"
                         >
-                            <div className="w-24 h-24 mx-auto bg-white/5 rounded-[2rem] border border-white/10 flex items-center justify-center mb-8 group-hover:bg-blue-600 transition-all duration-500 transform group-hover:-translate-y-2">
-                                <StatIcon className="w-10 h-10 text-blue-400 group-hover:text-white" />
+                            <div className="w-24 h-24 mx-auto bg-white/5 rounded-[2rem] border border-white/10 flex items-center justify-center mb-8 group-hover:bg-primary transition-all duration-500 transform group-hover:-translate-y-2">
+                                <StatIcon className="w-10 h-10 text-primary-light group-hover:text-white" />
                             </div>
                             <h3 className="text-5xl md:text-6xl font-black text-white mb-3 tracking-tight">{stat.value}</h3>
-                            <p className="text-blue-200 font-bold text-lg uppercase tracking-widest">{stat.label}</p>
+                            <p className="text-primary-light/80 font-bold text-lg uppercase tracking-widest">{stat.label}</p>
                         </motion.div>
                     );
                 })}
@@ -133,9 +133,9 @@ export const ActivitySection = ({ activities }) => (
     <section className="py-24 md:py-32 bg-white">
         <div className="max-w-7xl mx-auto px-4 md:px-8">
             <div className="text-center mb-24 max-w-3xl mx-auto">
-                <h2 className="text-blue-600 font-bold tracking-widest uppercase text-sm mb-4">What We Do</h2>
+                <h2 className="text-primary font-bold tracking-widest uppercase text-sm mb-4">What We Do</h2>
                 <h3 className="text-4xl md:text-5xl font-extrabold text-slate-900 leading-tight mb-6">Our Core Activities & Grassroot Programs</h3>
-                <div className="w-24 h-1.5 bg-blue-600 mx-auto rounded-full"></div>
+                <div className="w-24 h-1.5 bg-primary mx-auto rounded-full"></div>
             </div>
 
             <div className="space-y-32">
@@ -160,12 +160,12 @@ export const ActivitySection = ({ activities }) => (
                                         }}
                                     />
                                 </div>
-                                <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-blue-600/10 rounded-full blur-2xl -z-10 group-hover:bg-blue-600/20 transition-colors"></div>
+                                <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-primary/10 rounded-full blur-2xl -z-10 group-hover:bg-primary/20 transition-colors"></div>
                             </div>
                         </div>
 
                         <div className="w-full lg:w-1/2 space-y-6">
-                            <div className="w-12 h-12 bg-blue-100 rounded-2xl flex items-center justify-center text-blue-600 font-black text-2xl">
+                            <div className="w-12 h-12 bg-primary/10 rounded-2xl flex items-center justify-center text-primary font-black text-2xl">
                                 0{idx + 1}
                             </div>
                             <h4 className="text-3xl md:text-4xl font-bold text-slate-900">{activity.title}</h4>
@@ -175,8 +175,8 @@ export const ActivitySection = ({ activities }) => (
                             <ul className="space-y-4 pt-4">
                                 {activity.points && activity.points.map((point, pIdx) => (
                                     <li key={pIdx} className="flex items-center gap-4 text-slate-700 font-medium">
-                                        <div className="w-6 h-6 rounded-full bg-blue-500/10 flex items-center justify-center shrink-0">
-                                            <div className="w-2 h-2 rounded-full bg-blue-600"></div>
+                                        <div className="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
+                                            <div className="w-2 h-2 rounded-full bg-primary"></div>
                                         </div>
                                         {point}
                                     </li>
@@ -194,9 +194,9 @@ export const ServiceGallery = ({ images }) => (
     <section className="py-24 md:py-32 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 md:px-8">
             <div className="text-center mb-20">
-                <h2 className="text-blue-600 font-bold tracking-widest uppercase text-sm mb-4">Visual Journey</h2>
+                <h2 className="text-primary font-bold tracking-widest uppercase text-sm mb-4">Visual Journey</h2>
                 <h3 className="text-4xl font-extrabold text-slate-900 mb-6">Capturing Our Impact</h3>
-                <div className="w-24 h-1.5 bg-blue-600 mx-auto rounded-full"></div>
+                <div className="w-24 h-1.5 bg-primary mx-auto rounded-full"></div>
             </div>
 
             <div className="columns-1 md:columns-2 lg:columns-3 gap-6 space-y-6">
@@ -220,7 +220,7 @@ export const ServiceGallery = ({ images }) => (
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/20 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 flex flex-col justify-end p-8">
                             <div className="translate-y-10 group-hover:translate-y-0 transition-transform duration-500">
-                                <span className="inline-block px-3 py-1 bg-blue-600 text-white text-xs font-bold rounded-lg mb-3 uppercase tracking-tighter">Activity</span>
+                                <span className="inline-block px-3 py-1 bg-primary text-white text-xs font-bold rounded-lg mb-3 uppercase tracking-tighter">Activity</span>
                                 <h5 className="text-white font-bold text-xl">{img.alt}</h5>
                             </div>
                         </div>
@@ -238,7 +238,7 @@ export const CallToAction = ({ title, desc }) => (
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                className="bg-blue-600 rounded-[3rem] p-12 md:p-24 text-center text-white relative overflow-hidden shadow-2xl transform -translate-y-16"
+                className="bg-primary rounded-[3rem] p-12 md:p-24 text-center text-white relative overflow-hidden shadow-2xl transform -translate-y-16"
             >
                 <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-white/10 rounded-full blur-[100px] -mr-20 -mt-20"></div>
                 <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-black/10 rounded-full blur-[100px] -ml-20 -mb-20"></div>
@@ -247,12 +247,12 @@ export const CallToAction = ({ title, desc }) => (
                     <h2 className="text-4xl md:text-6xl font-black mb-10 leading-tight">
                         {title || "Ready to Join Our Mission Today?"}
                     </h2>
-                    <p className="text-xl md:text-2xl text-blue-100 mb-14 leading-relaxed font-medium">
+                    <p className="text-xl md:text-2xl text-primary-light/90 mb-14 leading-relaxed font-medium">
                         {desc || "Every step you take with us helps bring a smile to someone's face. Whether you donate your time or resources, you're making a real difference."}
                     </p>
                     <div className="flex flex-col sm:flex-row gap-8 justify-center items-center">
-                        <Link to="/contact" className="w-full sm:w-auto px-12 py-5 bg-white text-blue-600 font-black rounded-full shadow-2xl hover:shadow-white/20 transition-all transform hover:-translate-y-1 text-lg flex items-center justify-center gap-3 group">
-                            Donate Now <Heart className="w-6 h-6 fill-blue-600 group-hover:scale-125 transition-transform" />
+                        <Link to="/contact" className="w-full sm:w-auto px-12 py-5 bg-white text-primary font-black rounded-full shadow-2xl hover:shadow-white/20 transition-all transform hover:-translate-y-1 text-lg flex items-center justify-center gap-3 group">
+                            Donate Now <Heart className="w-6 h-6 fill-primary group-hover:scale-125 transition-transform" />
                         </Link>
                         <Link to="/contact" className="w-full sm:w-auto px-12 py-5 border-2 border-white/30 text-white font-black rounded-full hover:bg-white/10 transition-all text-lg flex items-center justify-center gap-3">
                             <Users className="w-6 h-6" /> Become a Volunteer

@@ -8,14 +8,17 @@ export default {
     extend: {
       colors: {
         primary: {
-          light: '#60a5fa',
-          DEFAULT: '#3b82f6',
-          dark: '#1d4ed8',
+          light: '#f87171', // Lighter red
+          DEFAULT: '#DC0B14', // Logo Primary Red
+          dark: '#b91c1c', // Darker red
         },
         secondary: {
-          light: '#f472b6',
-          DEFAULT: '#db2777',
-          dark: '#9d174d',
+          light: '#34d399', // Lighter green
+          DEFAULT: '#14461E', // Logo Secondary Deep Green
+          dark: '#064e3b', // Darker green
+        },
+        accent: {
+          DEFAULT: '#E9AF2A', // Logo Tertiary Gold
         }
       },
       backdropBlur: {

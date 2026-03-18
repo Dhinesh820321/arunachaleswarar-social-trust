@@ -77,7 +77,7 @@ const Gallery = () => {
                         animate={{ opacity: 1, y: 0 }}
                         className="text-4xl md:text-6xl font-extrabold text-white mb-6"
                     >
-                        Activity <span className="text-blue-500">Gallery</span>
+                        Activity <span className="text-primary">Gallery</span>
                     </motion.h1>
                     <motion.p
                         initial={{ opacity: 0, y: 20 }}
@@ -98,7 +98,7 @@ const Gallery = () => {
                             key={cat}
                             onClick={() => setFilter(cat)}
                             className={`px-8 py-3 rounded-full font-bold transition-all duration-300 ${filter === cat
-                                    ? 'bg-blue-600 text-white shadow-lg shadow-blue-500/40'
+                                    ? 'bg-primary text-white shadow-lg shadow-primary/40'
                                     : 'bg-white text-slate-600 hover:bg-slate-100'
                                 }`}
                         >
@@ -135,7 +135,7 @@ const Gallery = () => {
                                         </div>
                                         {/* Category Tag */}
                                         <div className="absolute top-4 left-4 flex gap-2">
-                                            <span className={`px-4 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-widest backdrop-blur-md text-white ${img.category === 'Social Work' ? 'bg-heart-500/80 bg-rose-500' : 'bg-blue-500/80'}`}>
+                                            <span className={`px-4 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-widest backdrop-blur-md text-white ${img.category === 'Social Work' ? 'bg-heart-500/80 bg-rose-500' : 'bg-primary/80'}`}>
                                                 {img.category === 'Social Work' ? <Heart className="w-3 h-3 inline mr-1 fill-current" /> : <Calendar className="w-3 h-3 inline mr-1" />}
                                                 {img.category}
                                             </span>
@@ -179,7 +179,7 @@ const Gallery = () => {
                             <div className="p-8 md:p-12 text-white">
                                 <div className="flex justify-between items-start mb-4">
                                     <div>
-                                        <span className="text-blue-500 font-bold uppercase tracking-widest text-xs mb-2 block">{selectedImg.category}</span>
+                                        <span className="text-primary font-bold uppercase tracking-widest text-xs mb-2 block">{selectedImg.category}</span>
                                         <h2 className="text-3xl md:text-4xl font-extrabold">{selectedImg.title}</h2>
                                     </div>
                                 </div>

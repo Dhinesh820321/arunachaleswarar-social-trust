@@ -45,14 +45,14 @@ const Contact = () => {
         <div className="bg-slate-50 min-h-screen">
             {/* Header */}
             <section className="bg-slate-900 pt-32 pb-20 text-center relative overflow-hidden">
-                <div className="absolute top-[-10%] right-[-10%] w-[40%] h-[40%] bg-blue-600/10 rounded-full blur-[100px]"></div>
+                <div className="absolute top-[-10%] right-[-10%] w-[40%] h-[40%] bg-primary/10 rounded-full blur-[100px]"></div>
                 <div className="max-w-7xl mx-auto px-4 md:px-8 relative z-10">
                     <motion.h1
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         className="text-4xl md:text-6xl font-extrabold text-white mb-6"
                     >
-                        Get In <span className="text-blue-500">Touch</span>
+                        Get In <span className="text-primary">Touch</span>
                     </motion.h1>
                     <motion.p
                         initial={{ opacity: 0, y: 20 }}
@@ -78,7 +78,7 @@ const Contact = () => {
                                     whileInView={{ opacity: 1, x: 0 }}
                                     transition={{ delay: i * 0.1 }}
                                     viewport={{ once: true }}
-                                    className="glass-card p-6 rounded-3xl flex items-start gap-4 border-transparent hover:border-blue-500/20 transition-all shadow-md"
+                                    className="glass-card p-6 rounded-3xl flex items-start gap-4 border-transparent hover:border-primary/20 transition-all shadow-md"
                                 >
                                     <div className={`p-3 bg-${info.color}-500/10 rounded-2xl text-${info.color}-600`}>
                                         <info.icon className="w-6 h-6" />
@@ -116,7 +116,7 @@ const Contact = () => {
                             viewport={{ once: true }}
                             className="glass-card p-10 md:p-16 rounded-[4rem] shadow-2xl relative overflow-hidden"
                         >
-                            <div className="absolute top-0 left-0 w-2 h-full bg-blue-600"></div>
+                            <div className="absolute top-0 left-0 w-2 h-full bg-primary"></div>
 
                             <h3 className="text-3xl font-extrabold text-slate-900 mb-8 italic">Send us a Message</h3>
 
@@ -129,7 +129,7 @@ const Contact = () => {
                                     <p className="text-slate-500">Thank you for reaching out. We will get back to you shortly.</p>
                                     <button
                                         onClick={() => setFormStatus('idle')}
-                                        className="text-blue-600 font-bold hover:underline"
+                                        className="text-primary font-bold hover:underline"
                                     >
                                         Send another message
                                     </button>
@@ -142,7 +142,7 @@ const Contact = () => {
                                             <input
                                                 type="text"
                                                 required
-                                                className="w-full px-6 py-4 bg-slate-50 border-2 border-slate-100 rounded-2xl focus:border-blue-500 focus:outline-none transition-colors"
+                                                className="w-full px-6 py-4 bg-slate-50 border-2 border-slate-100 rounded-2xl focus:border-primary focus:outline-none transition-colors"
                                                 placeholder="Dhinesh"
                                             />
                                         </div>
@@ -151,7 +151,7 @@ const Contact = () => {
                                             <input
                                                 type="email"
                                                 required
-                                                className="w-full px-6 py-4 bg-slate-50 border-2 border-slate-100 rounded-2xl focus:border-blue-500 focus:outline-none transition-colors"
+                                                className="w-full px-6 py-4 bg-slate-50 border-2 border-slate-100 rounded-2xl focus:border-primary focus:outline-none transition-colors"
                                                 placeholder="dhinesh@example.com"
                                             />
                                         </div>
@@ -161,7 +161,7 @@ const Contact = () => {
                                         <input
                                             type="text"
                                             required
-                                            className="w-full px-6 py-4 bg-slate-50 border-2 border-slate-100 rounded-2xl focus:border-blue-500 focus:outline-none transition-colors"
+                                            className="w-full px-6 py-4 bg-slate-50 border-2 border-slate-100 rounded-2xl focus:border-primary focus:outline-none transition-colors"
                                             placeholder="How can we help?"
                                         />
                                     </div>
@@ -170,7 +170,7 @@ const Contact = () => {
                                         <textarea
                                             required
                                             rows="5"
-                                            className="w-full px-6 py-4 bg-slate-50 border-2 border-slate-100 rounded-2xl focus:border-blue-500 focus:outline-none transition-colors"
+                                            className="w-full px-6 py-4 bg-slate-50 border-2 border-slate-100 rounded-2xl focus:border-primary focus:outline-none transition-colors"
                                             placeholder="Write your message here..."
                                         ></textarea>
                                     </div>
